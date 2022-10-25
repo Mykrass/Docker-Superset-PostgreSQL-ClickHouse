@@ -27,3 +27,10 @@ docker exec -it superset superset fab create-admin \
               
 docker exec -it superset superset db upgrade
 docker exec -it superset superset init
+
+# ClickHouse
+docker run --rm -d \
+  --name clickhouse \
+  --net=app_net \
+  -v clickhouse_vol:/var/lib/clickhouse \
+  yandex/clickhouse-server
