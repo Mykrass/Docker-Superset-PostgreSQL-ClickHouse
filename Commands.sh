@@ -34,3 +34,7 @@ docker run --rm -d \
   --net=app_net \
   -v clickhouse_vol:/var/lib/clickhouse \
   yandex/clickhouse-server
+
+# Superset-clickhouse
+docker exec superset pip install clickhouse-sqlalchemy
+docker restart superset
