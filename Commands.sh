@@ -15,6 +15,17 @@ docker run --rm -d \
   --net=app_net \
   postgres:14
 
+# Postgres with Jupyter Notebooks
+docker run --rm -d \
+  --name postgres_2 \
+  -e POSTGRES_PASSWORD=1234 \
+  -e POSTGRES_USER=postgres \
+  -e POSTGRES_DB=postgres \
+  -v postgres_vol_2:/var/lib/postgresql/data \
+  --net=app_net \
+  -p 5432:5432 \
+  postgres:14
+
 # Superset
 docker run -d --rm --net=app_net -p 80:8088 --name superset apache/superset
 
