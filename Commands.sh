@@ -23,7 +23,7 @@ docker run --rm -d \
   -e POSTGRES_DB=postgres \
   -v postgres_vol_2:/var/lib/postgresql/data \
   --net=app_net \
-  -p 5432:5432 \
+  -p 6432:5432 \
   postgres:14
 
 # Superset
