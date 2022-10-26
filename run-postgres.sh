@@ -15,7 +15,7 @@ docker run --rm --name $NAME \
   -e PGDATA=/var/lib/pgsql/data/pgdata14 \
   -e POSTGRES_INITDB_ARGS="--data-checksums --encoding=UTF8" \
   -e POSTGRES_DB=db \
-  -p ${HOST_PORT}:5432 \
+  -p 6432:5432 \
   ${DOCKER_REPO}:${TAG} \
   postgres \
     -c 'config_file=/etc/postgresql/postgresql.conf' \
