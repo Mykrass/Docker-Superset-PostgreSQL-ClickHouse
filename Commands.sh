@@ -5,7 +5,7 @@ docker volume create clickhouse_vol
 
 docker network create app_net
 
-# Postgres
+# Postgres_1
 docker run --rm -d \
   --name postgres_1 \
   -e POSTGRES_PASSWORD=postgres_admin \
@@ -15,7 +15,7 @@ docker run --rm -d \
   --net=app_net \
   postgres:14
 
-# Postgres with Jupyter Notebooks
+# Postgres_2
 docker run --rm -d \
   --name postgres_2 \
   -e POSTGRES_PASSWORD=1234 \
