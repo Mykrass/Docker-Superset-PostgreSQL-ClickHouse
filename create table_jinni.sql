@@ -1,4 +1,5 @@
-drop table jinni;
+DROP TABLE jinni;
+
 CREATE TABLE jinni (
   candidate_id INT,
   hire_reported TEXT,
