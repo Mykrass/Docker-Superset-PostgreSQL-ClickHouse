@@ -12,7 +12,7 @@ CREATE TABLE jinni (
   company_type TEXT
   );
   
-COPY jinni(
+\COPY jinni(
   candidate_id,
   hire_reported,
   primary_keyword_candidate,
