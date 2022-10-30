@@ -18,9 +18,9 @@ docker run --rm -d \
 # Postgres_2
 docker run --rm -d \
   --name postgres_2 \
-  -e POSTGRES_PASSWORD=1234 \
-  -e POSTGRES_USER=postgres \
-  -e POSTGRES_DB=postgres \
+  -e POSTGRES_PASSWORD=postgres_some_password \
+  -e POSTGRES_USER=postgres_some_user \
+  -e POSTGRES_DB=app_db \
   -v postgres_vol_2:/var/lib/postgresql/data \
   --net=app_net \
   -p 6432:5432 \
