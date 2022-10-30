@@ -10,6 +10,7 @@ CREATE TABLE jinni (
   hire_salary FLOAT,
   company_type TEXT
   );
+  
 COPY jinni(
   candidate_id,
   hire_reported,
